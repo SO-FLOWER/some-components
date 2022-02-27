@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="box">
+        <div class="table_head">
+            <div class="left_head">活动名称</div>
+            <div class="right_head">参与人数</div>
+        </div>
+        
+    </div>
+</body>
+<script>
+    let BOX = document.querySelector('.box');
+    let data = [
+        {name:'这是活动名称',value:113},
+        {name:'这是活动名称',value:113},
+        {name:'这是活动名称',value:113},
+        {name:'这是活动名称',value:113},
+        {name:'这是活动名称',value:113},]
+
+        data.map(item => {
+               var items = document.createElement('div')
+               items.innerHTML = ` 
+                        <div class="table_body">
+                            <div class="left_body">${item.name}</div>
+                            <div class="right_body">${item.value}人</div>
+                        </div>` 
+                BOX.appendChild(items)
+            })
+</script>
+</html>

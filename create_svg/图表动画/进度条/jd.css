@@ -1,0 +1,74 @@
+@keyframes move{
+    from 
+      {transform:scaleX(0)}
+    to 
+      {transform:scaleX(1)}
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list_Box{
+    width: 500px;
+    background-color: black;
+}
+
+.list_Box .item{
+    display: flex;
+}
+
+/* .list_Box ul li {
+    display: flex;
+    background-color: black;
+    margin-bottom: 6px;
+} */
+
+.list_Box .text-name{
+    width: 100px;
+    height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: end;
+    margin: 3 5;
+}
+
+.list_Box .out_box{
+    width: 280px;
+    height: 8px;
+    /* background-color: #E5A55A; */
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 16px;
+    
+}
+
+.list_Box .in_box{
+    height: 6px;
+    width: 0%;
+    background-color: #E5A55A;
+    border: 1px solid #E5A55A;
+    border-radius: 20px;
+    animation: move 5s linear;  
+    transform-origin:0;
+}
+
+.list_Box .contain{
+    width: 75px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.03);
+    text-align: center;
+    line-height: 31px;
+    margin-left: 15px
+}
+
+.list_Box .contain span{
+    width: 56px;
+    height: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;   
+}

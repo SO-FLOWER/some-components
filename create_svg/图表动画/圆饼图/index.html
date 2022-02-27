@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <svg width="120" height="120">
+          <circle
+            r="93"
+            cx="62.5"
+            cy="62.5"
+            fill="transparent"
+            stroke= "rgba(160,160,160,.75)"
+            strokeWidth="8"
+            strokeLinecap="round"
+          />
+          <circle
+            r="93"
+            cx="62.5"
+            cy="62.5"
+            id="circle"
+            fill="transparent"
+            stroke="rgba(53,60,64,0.8)"
+            strokeWidth="8"
+            strokeDasharray=`${circum * ((1000-percentZ) / 1000)} ${circum}`
+            transform=`rotate(-90,62.5,62.5)`
+            strokeLinecap="round"
+          />
+          <circle
+            r="93"
+            cx="62.5"
+            cy="62.5"
+            fill="transparent"
+            stroke="rgba(160,160,160,.75)"
+            strokeWidth="8"
+            strokeDasharray={`0 ${circum}`}
+            strokeLinecap="round"
+            style={{
+              opacity:parseInt(this.state.percent) >= 1000 ? 0 : 1
+            }}
+            transform={`rotate(${-90 + ((1000-percentZ) / 1000) * 360},${cx},${cy})`}
+          />
+          <text
+            className="AgencyFB-Bold"
+            x="62.5"
+            y="62.5"
+            fontWeight="400"
+            fontSize="17"
+            fill="#FFFFFF"
+            textAnchor="middle" 
+            dominantBaseline="middle"
+          >
+            {this.state.percent}件
+          </text>
+          <rect 
+            x="58"
+            y="11"
+            rx="5" 
+            ry="5" 
+            width="7" 
+            height="25" 
+            fill="rgba(149,150,152,.75)"/>
+        </svg>
+      </div>
+</body>
+</html>

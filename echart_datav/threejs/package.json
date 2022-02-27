@@ -1,0 +1,105 @@
+{
+  "name": "@jxb-test/ceshi",
+  "version": "0.0.9",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1",
+    "mtl-obj-loader": "^1.0.4",
+    "three": "^0.124.0",
+    "three-obj-loader": "^1.1.3",
+    "three-obj-mtl-loader": "^1.0.3"
+  },
+  "datav": {
+    "cn_name": "测试-交互组件",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "interact"
+    ],
+    "view": {
+      "width": "500",
+      "height": "500",
+      "minWidth": "500",
+      "minHeight": "500"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "events": {
+      "valueChange": {
+        "description": "值改变触发事件",
+        "fields": {
+          "value": {
+            "description": "值"
+          }
+        }
+      }
+    },
+    "config": {
+      "size": {
+        "name": "字号",
+        "type": "number",
+        "default": 12,
+        "range": [
+          10,
+          100
+        ]
+      },
+      "text-align": {
+        "name": "对齐方式",
+        "type": "select",
+        "options": [
+          {
+            "name": "左对齐",
+            "value": "left"
+          },
+          {
+            "name": "右对齐",
+            "value": "right"
+          },
+          {
+            "name": "居中对齐",
+            "value": "center"
+          }
+        ],
+        "default": "center"
+      },
+      "color": {
+        "name": "字体颜色",
+        "type": "color",
+        "default": "#000"
+      },
+      "a":{
+        "name" : "背景图",
+        "type" : "image",
+        "default": "./objLoader/img/uv_grid_opengl.jpg"
+      },
+      "b":{
+        "name" : "背景图",
+        "type" : "image",
+        "default": "./objLoader/img/jinshu.jpeg"
+      },
+      "c":{
+        "name" : "背景图",
+        "type" : "image",
+        "default": "./objLoader/models/obj/male01.obj"
+      }
+    },
+    "api_data": {
+      "source": [
+        {
+          "value": "文字"
+        }
+      ]
+    }
+  }
+}

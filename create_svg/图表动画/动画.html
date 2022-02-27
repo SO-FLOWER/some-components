@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>ECharts</title>
+		<!-- 引入 echarts.js -->
+		<script src="./echarts.min.js"></script>
+	</head>
+
+	<body>
+		<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+		<div id="main" style="width: 600px;height:400px;"></div>
+		<script type="text/javascript">
+			// 基于准备好的dom，初始化echarts实例
+			var myChart = echarts.init(document.getElementById('main'));
+			var option;
+
+			// var xAxisData = [];
+			// var data1 = [];
+			// var data2 = [];
+			// for(var i = 0; i < 100; i++) {
+			// 	xAxisData.push('类目' + i);
+			// 	data1.push((Math.sin(i / 5) * (i / 5 - 10) + i / 6) * 5);
+			// 	data2.push((Math.cos(i / 5) * (i / 5 - 10) + i / 6) * 5);
+			// }
+
+			option = {
+				title: {
+					text: '柱状图动画延迟'
+				},
+				// legend: {
+				// 	data: ['bar', 'bar2'],
+				// 	align: 'left'
+				// },
+				toolbox: {
+					// y: 'bottom',
+					feature: {
+						magicType: {
+							type: ['stack', 'tiled']
+						},
+						dataView: {},
+						saveAsImage: {
+							pixelRatio: 2
+						}
+					}
+				},
+				tooltip: {},
+				xAxis: {
+					type: 'category',
+                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+					silent: false,
+					splitLine: {
+						show: false
+					}
+				},
+				yAxis: {
+                    type: 'value'
+                },
+				series: [{
+					name: 'bar',
+					type: 'bar',
+					data: [120, 200, 150, 80, 70, 110, 130],
+                    showBackground: true,
+                    backgroundStyle: {
+                        color: 'rgba(220, 220, 220, 0.8)'},
+                    // },
+					animationDelay: function(idx) {
+						return idx * 1000;
+					}
+                }],
+                animationDuration: 1000,
+                animationEasing: 'elasticOut',
+                 animationEasing: "cubicInOut",
+				// }, {
+				// 	name: 'bar2',
+				// 	type: 'bar',
+				// 	data: data2,
+				// 	animationDelay: function(idx) {
+				// 		return idx * 10 + 100;
+				// 	}
+				// }],
+				// animationEasing: 'elasticOut',
+				// animationDelayUpdate: function(idx) {
+				// 	return idx * 5;
+				// }
+			};
+			myChart.setOption(option);
+		</script>
+	</body>
+
+</html>

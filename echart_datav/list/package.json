@@ -1,0 +1,176 @@
+{
+  "name": "@ljdy.test/list",
+  "version": "0.0.8",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "list",
+    "icon": "./icon/3.jpg",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "490",
+      "height": "600",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "config": {
+      "fontStyle": {
+        "name": "字体样式",
+        "type": "string",
+        "default": "思源黑体 CN"
+      },
+      "numStyle": {
+        "name": "数字样式",
+        "type": "string",
+        "default": "Blender pro"
+      }
+    },
+    "api_data": {
+      "source": [
+        {
+          "id": 1,
+          "detection": "观音堂水库",
+          "water": 22,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 2,
+          "detection": "观音堂水库",
+          "water": 19,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 3,
+          "detection": "观音堂水库",
+          "water": 20,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 4,
+          "detection": "观音堂水库",
+          "water": 15,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 5,
+          "detection": "观音堂水库",
+          "water": 23,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 6,
+          "detection": "观音堂水库",
+          "water": 25,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 7,
+          "detection": "观音堂水库",
+          "water": 15,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 8,
+          "detection": "观音堂水库",
+          "water": 18,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 9,
+          "detection": "观音堂水库",
+          "water": 18,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 10,
+          "detection": "观音堂水库",
+          "water": 16,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 11,
+          "detection": "观音堂水库",
+          "water": 20,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 12,
+          "detection": "观音堂水库",
+          "water": 22,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 13,
+          "detection": "观音堂水库",
+          "water": 24,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 14,
+          "detection": "观音堂水库",
+          "water": 18,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 15,
+          "detection": "观音堂水库",
+          "water": 20,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 16,
+          "detection": "观音堂水库",
+          "water": 16,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 17,
+          "detection": "观音堂水库",
+          "water": 19,
+          "range": "8-25",
+          "time": 13
+        },
+        {
+          "id": 18,
+          "detection": "观音堂水库",
+          "water": 23,
+          "range": "8-25",
+          "time": 13
+        }
+      ]
+    }
+  }
+}

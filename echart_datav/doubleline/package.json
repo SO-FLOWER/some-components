@@ -1,0 +1,290 @@
+{
+  "name": "@ljdy.test/doubleline",
+  "version": "0.0.2",
+  "dependencies": {
+    "bcore": "0.0.18",
+    "echarts": "^5.0.0",
+    "jquery": "2.1.4",
+    "lodash": "4.6.1"
+  },
+  "datav": {
+    "cn_name": "doubleline",
+    "icon": "/icon/doubleline.jpg",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "700",
+      "height": "200",
+      "minWidth": "200",
+      "minHeight": "100"
+    },
+    "apis": {
+      "source": {
+        "handler": "render",
+        "description": "接口描述",
+        "fields": {
+          "value": {
+            "description": "值说明"
+          }
+        }
+      }
+    },
+    "config": {
+      "xAxis": {
+        "name": "x轴",
+        "type": "group",
+        "children": {
+          "show": {
+            "name": "显示",
+            "type": "boolean",
+            "default": false
+          },
+          "rotate": {
+            "name": "名称旋转",
+            "type": "number",
+            "default": null
+          },
+          "color": {
+            "name": "颜色",
+            "type": "color",
+            "default": "rgba(255,255,255,.7)"
+          },
+          "fontStyle": {
+            "name": "字体样式",
+            "type": "text",
+            "default": "normal"
+          },
+          "fontWeight": {
+            "name": "字体粗细",
+            "type": "text",
+            "default": "normal"
+          },
+          "fontFamily": {
+            "name": "字体",
+            "type": "text",
+            "default": "sans-serif"
+          },
+          "fontSize": {
+            "name": "字号",
+            "type": "number",
+            "default": 28
+          }
+        }
+      },
+      "yAxis": {
+        "name": "y轴",
+        "type": "group",
+        "children": {
+          "show": {
+            "name": "显示",
+            "type": "boolean",
+            "default": false
+          },
+          "rotate": {
+            "name": "名称旋转",
+            "type": "number",
+            "default": null
+          },
+          "color": {
+            "name": "颜色",
+            "type": "color",
+            "default": "rgba(255,255,255,.7)"
+          },
+          "fontStyle": {
+            "name": "字体样式",
+            "type": "text",
+            "default": "normal"
+          },
+          "fontWeight": {
+            "name": "字体粗细",
+            "type": "text",
+            "default": "normal"
+          },
+          "fontFamily": {
+            "name": "字体",
+            "type": "text",
+            "default": "sans-serif"
+          },
+          "fontSize": {
+            "name": "字号",
+            "type": "number",
+            "default": 28
+          }
+        }
+      },
+      "grid": {
+        "name": "网格",
+        "type": "group",
+        "children": {
+          "show": {
+            "name": "显示",
+            "type": "boolean",
+            "default": true
+          },
+          "left": {
+            "name": "左侧",
+            "type": "text",
+            "default": "10%"
+          },
+          "top": {
+            "name": "顶部",
+            "type": "text",
+            "default": "20%"
+          },
+          "right": {
+            "name": "右侧",
+            "type": "text",
+            "default": "10%"
+          },
+          "bottom": {
+            "name": "底部",
+            "type": "text",
+            "default": "15%"
+          },
+          "width": {
+            "name": "宽度",
+            "type": "text",
+            "default": "auto"
+          },
+          "height": {
+            "name": "高度",
+            "type": "text",
+            "default": "auto"
+          },
+          "containLabel": {
+            "name": "自适应布局",
+            "type": "boolean",
+            "default": false
+          },
+          "backgroundColor": {
+            "name": "背景色",
+            "type": "multicolor",
+            "default": {
+              "style": "single",
+              "value": "rgba(0,0,0,0)"
+            }
+          },
+          "borderColor": {
+            "name": "边框色",
+            "type": "multicolor",
+            "default": {
+              "style": "single",
+              "value": "#ccc"
+            }
+          },
+          "borderWidth": {
+            "name": "边框粗细",
+            "type": "number",
+            "default": 0
+          }
+        }
+      }
+    },
+    "api_data": {
+      "source": [
+        {
+          "x": "0",
+          "y": 30
+        },
+        {
+          "x": "1",
+          "y": 35
+        },
+        {
+          "x": "2",
+          "y": 32
+        },
+        {
+          "x": "3",
+          "y": 31
+        },
+        {
+          "x": "4",
+          "y": 38
+        },
+        {
+          "x": "5",
+          "y": 40
+        },
+        {
+          "x": "6",
+          "y": 41
+        },
+        {
+          "x": "7",
+          "y": 45
+        },
+        {
+          "x": "8",
+          "y": 48
+        },
+        {
+          "x": "9",
+          "y": 50
+        },
+        {
+          "x": "10",
+          "y": 51
+        },
+        {
+          "x": "11",
+          "y": 51
+        },
+        {
+          "x": "12",
+          "y": 54
+        },
+        {
+          "x": "13",
+          "y": 52
+        },
+        {
+          "x": "14",
+          "y": 52
+        },
+        {
+          "x": "15",
+          "y": 48
+        },
+        {
+          "x": "16",
+          "y": 48
+        },
+        {
+          "x": "17",
+          "y": 42
+        },
+        {
+          "x": "18",
+          "y": 42
+        },
+        {
+          "x": "19",
+          "y": 43
+        },
+        {
+          "x": "20",
+          "y": 41
+        },
+        {
+          "x": "21",
+          "y": 38
+        },
+        {
+          "x": "22",
+          "y": 33
+        },
+        {
+          "x": "23",
+          "y": 32
+        },
+        {
+          "x": "24",
+          "y": 30
+        }
+      ]
+    }
+  }
+}

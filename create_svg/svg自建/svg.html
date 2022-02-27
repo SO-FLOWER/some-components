@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <svg version="1.1" width="400" height="400">
+        <rect x="50" y="50" width="300" height="100" class="rect"/>
+    </svg> 
+    <script>
+        function rectMove(){
+            var svgRect = document.querySelector("rect")
+            var sudu = 2;
+            var weizhi = 50;
+            var int1 = setInterval(function(){
+                weizhi += sudu;
+                svgRect.setAttribute("x",weizhi)
+                if(weizhi == 440){
+                    weizhi = 0;
+                    // clearInterval(int1)
+                }
+                console.log(weizhi)
+            },10)
+        }
+
+        rectMove()
+    </script>
+</body>
+</html>
